@@ -1,0 +1,19 @@
+/* src/Components/CartPage.css */
+.cart-page {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .cart-page h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #333;
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 10px;
+  }
+  

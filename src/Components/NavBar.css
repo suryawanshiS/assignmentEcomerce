@@ -1,0 +1,155 @@
+/* src/Components/Navbar.css
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--navbar-bg-color);
+    color: var(--navbar-text-color);
+    padding: 15px 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .navbar-buttons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .theme-toggle-btn,
+  .logout-btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .theme-toggle-btn {
+    background-color: var(--theme-toggle-btn-bg-color);
+    color: var(--theme-toggle-btn-text-color);
+  }
+  
+  .theme-toggle-btn:hover {
+    background-color: var(--theme-toggle-btn-hover-bg-color);
+  }
+  
+  .logout-btn {
+    background-color: var(--logout-btn-bg-color);
+    color: var(--logout-btn-text-color);
+  }
+  
+  .logout-btn:hover {
+    background-color: var(--logout-btn-hover-bg-color);
+  }
+  
+  /* CSS Variables for Theme */
+  /* :root {
+    --navbar-bg-color: #0d1fe8;
+    --navbar-text-color: #fff;
+    --theme-toggle-btn-bg-color: #6c757d;
+    --theme-toggle-btn-text-color: #fff;
+    --theme-toggle-btn-hover-bg-color: #5a6268;
+    --logout-btn-bg-color: #dc3545;
+    --logout-btn-text-color: #fff;
+    --logout-btn-hover-bg-color: #c82333;
+  }
+  
+  .dark-mode {
+    --navbar-bg-color: #333;
+    --navbar-text-color: #f9f9f9;
+    --theme-toggle-btn-bg-color: #555;
+    --theme-toggle-btn-hover-bg-color: #444;
+    --logout-btn-bg-color: #dc3545;
+    --logout-btn-hover-bg-color: #c82333;
+  }
+   */ 
+
+   /* src/Components/NavBar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #ddd;
+}
+
+.navbar-logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.theme-toggle-btn,
+.cart-btn,
+.logout-btn {
+  margin-left: 10px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+}
+
+.theme-toggle-btn:hover,
+.cart-btn:hover,
+.logout-btn:hover {
+  background-color: #0056b3;
+}
+
+.cart-dropdown {
+  position: relative;
+}
+
+.cart-btn {
+  display: flex;
+  align-items: center;
+}
+
+.cart-dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  max-height: 400px;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+.cart-btn:hover + .cart-dropdown-content,
+.cart-dropdown-content:hover {
+  display: block;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart-item-image {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.cart-item-details {
+  flex-grow: 1;
+}
