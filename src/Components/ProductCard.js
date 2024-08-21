@@ -31,7 +31,7 @@
 
 // export default ProductCard;
 
-
+//new code 
 // src/Components/ProductCard.js
 import React from 'react';
 
